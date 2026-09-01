@@ -8,7 +8,7 @@
 [![Looker](https://img.shields.io/badge/Looker_Studio-Dashboard-4285F4?style=for-the-badge&logo=looker&logoColor=white)](https://lookerstudio.google.com)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 
-A portfolio-grade risk analytics project simulating a BNPL lending portfolio — built to demonstrate Credit/Risk and Product Analyst skills for fintech roles.
+A portfolio-grade risk analytics project simulating a BNPL lending portfolio — built to demonstrate Credit/Risk and Product Analyst skills.
 
 > ⚠️ **Note:** Dataset is synthetic (~40,000 loans). Default rate (~38%) is intentionally elevated to stress-test risk scoring logic across all DPD buckets.
 
@@ -204,7 +204,9 @@ Built in Looker Studio connected to BigQuery sandbox.
 **Zuhair** — Data Analyst, Product Strategy & Operations
 
 ![DP-600](https://img.shields.io/badge/Microsoft-DP--600_Certified-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Expert-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Proficient-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-Proficient-3776AB?style=flat-square&logo=python&logoColor=white)
 ![BigQuery](https://img.shields.io/badge/BigQuery-Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-Azure-FF3621?style=flat-square&logo=databricks&logoColor=white)
+
+
