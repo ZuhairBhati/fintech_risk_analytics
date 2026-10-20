@@ -63,45 +63,9 @@ fintech-risk-analytics/
 
 ## 🏗️ Project Architecture
 
+![Architecture](assets/architecture.svg)
+
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        DATA GENERATION                          │
-│           Python (Faker + NumPy) → 40,000 synthetic loans       │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                        LOCAL STORAGE                            │
-│   MySQL 8.0 → loans · repayments · transactions · customers     │
-└───────┬───────────────────────────────────────────┬─────────────┘
-        │                                           │
-        ▼                                           ▼
-┌───────────────────┐                   ┌───────────────────────┐
-│   EDA & SIGNALS   │                   │    RISK SCORING       │
-│  Jupyter Notebook │                   │   Jupyter Notebook    │
-│                   │                   │                       │
-│ • Missing values  │                   │ • Rule-based scoring  │
-│ • DPD profiling   │                   │ • 3-tier segmentation │
-│ • Partial pay     │                   │ • Signal aggregation  │
-│ • City tier test  │                   │ • CSV export          │
-└───────────────────┘                   └───────────┬───────────┘
-                                                    │
-                            ┌───────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                        BIGQUERY (Cloud)                         │
-│                                                                 │
-│   risk_scored_loans · vw_vintage_dpd · vw_roll_rates            │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    LOOKER STUDIO DASHBOARD                      │
-│                                                                 │
-│  Page 1: Portfolio Overview  │  Page 2: Vintage & Cohort        │
-│  Page 3: Roll Rate Matrix    │  Page 4: Risk Segments           │
-└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
