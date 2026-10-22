@@ -65,8 +65,6 @@ fintech-risk-analytics/
 
 ![Architecture](assets/architecture.svg)
 
-```
-```
 
 ---
 
